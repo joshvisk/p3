@@ -1,11 +1,20 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Lorem Ipsom Paragraph</title>
-</head>
+@extends('layouts.master')
 
-<body>
-<h1>Lorem Ipsom Paragraphs</h1>
-</body>
-</html>
+@section('title')
+	Paragraph Generation
+@stop
+
+@section('content')
+<h2>Lorem Ipsom Paragraphs</h2>
+<br />
+<?php
+	$result = "";
+	$paragraphCount = 5;
+  $generator = new Badcow\LoremIpsum\Generator();
+  $paragraphs = $generator->getParagraphs($paragraphCount);
+	for ($i=0; $i < $paragraphCount; $i++) {
+		$result .= "<p>" . $paragraphs[$i] . "</p>";
+	}
+  echo $result;
+?>
+@stop

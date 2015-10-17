@@ -17,3 +17,6 @@ Route::post('/paragraph', 'ParagraphController@postIndex');
 
 Route::get('/user', 'UserController@getIndex');
 Route::post('/user', 'UserController@postIndex');
+
+// Route allows the developer to view logs from the \logs uri
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');

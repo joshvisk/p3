@@ -1,11 +1,9 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Random User</title>
-</head>
+@extends('layouts.master')
 
-<body>
-<h1>Random User Generator</h1>
-</body>
-</html>
+@section('title')
+Random User
+@stop
+
+@section('content')
+<h2>Random User Generator</h2>
+@stop
