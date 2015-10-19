@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 
 class ParagraphController extends Controller {
 
@@ -17,11 +18,11 @@ class ParagraphController extends Controller {
     	return view('paragraph');
     }
 
-    /**
-    * Responds to requests to GET & POST and returns the Random User generation page *
-    */
-
-    public function postIndex() {
+    public function postIndex(Request $request) {
+			// Validate the request data
+			$this->validate($request, [
+					'count' => 'required',
+			]);
     	return view('paragraph');
     }
 }

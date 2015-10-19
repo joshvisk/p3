@@ -8,6 +8,8 @@
 
 <!-- Bootstrap -->
 <link rel="stylesheet" href="../css/bootstrap.css">
+@yield('stylesheet')
+@yield('scripts')
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,6 +19,7 @@
     <![endif]-->
 </head>
 <body>
+@yield('includes')
 <nav class="navbar navbar-default navbar-inverse">
   <div class="container-fluid"> 
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -31,6 +34,7 @@
     <div class="col-lg-12">
       <div class="jumbotron">
         <h1 class="text-center">Developer's Best Friend</h1>
+        <hr>
         @yield('content')
       </div
     ></div>
