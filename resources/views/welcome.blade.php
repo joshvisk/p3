@@ -21,7 +21,7 @@
     <form method="get" action="/user" class="welcomeButton">
 	    <button type="submit" class="btn btn-success btn-lg">User Generator</button>
     </form>
-		<form methot="get" action="/paragraph" class="welcomeButton">
+		<form method="get" action="/paragraph" class="welcomeButton">
   	  <button type="submit" class="btn btn-primary btn-lg">Lorem Ipsum Generator</button>
 		</form>
   </div>
