@@ -22,10 +22,8 @@ class UserController extends Controller {
 		
 		// Validate the request data
     $this->validate($request, [
-        'count' => 'required',
-    ]);
-
-		
+    	'users' => 'required|integer|min:1|max:20',
+    ]);		
 		return view('user');
 	}
 

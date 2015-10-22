@@ -1,17 +1,24 @@
 @extends('layouts.master')
 
+@section('stylesheet')
+	<link rel="stylesheet" href="../css/styles.css">
+@stop
+
+@section('title')
+	 - Welcome
+@stop
+
 @section('content')
 <div class="row">
-  <div class="col-lg-2 col-lg-offset-4 col-md-offset-4 col-md-2 col-sm-offset-3 col-sm-3 col-xs-offset-3 col-xs-3">
-    <p><a class="btn btn-success btn-lg" href="/user" role="button">User Generator</a> </p>
+	<p>This application will allow a user to request paragraphs of Lorem Ipsum text and randomly generate user date.</p>
+  <p>Lorem Ipsum text has been used by typesetters and most recently, by web designers as "placeholder" or "dummy" text.  It is very useful for design and testing purposes.</p>
+  <div class="example"><b>Example:</b><br />Imperdiet auctor felis libero ornare habitasse nec elit, felis inceptos tellus inceptos cubilia quis mattis faucibus, sem non odio fringilla class aliquam. Dui eget integer nibh dolor commodo venenatis, ut molestie semper adipiscing amet. Tempor feugiat donec sapien malesuada auctor sapien arcu inceptos aenean, consequat metus litora mattis vivamus feugiat arcu adipiscing mauris, primis ante ullamcorper ad nisi lobortis arcu per.</div>
+  <p> </p>
+	<p>The random user generator will create fake names, address, and a short Lorem Ipsum blurb.</p>
+  <div class="example"><b>Example:</b><br /><h4>John Smith</h4><br /><i>1234 56th Ave SW Seattle, WA 98001</i><br />Tempor feugiat donec sapien malesuada auctor sapien arcu inceptos aenean, consequat metus litora mattis vivamus feugiat arcu adipiscing mauris, primis ante ullamcorper ad nisi lobortis arcu per.</div>  
+  <div class="text-center">
+    <a href="/user"><button type="submit" class="btn btn-success btn-lg">User Generator</button></a>
+    <a href="/paragraph"><button type="submit" class="btn btn-primary btn-lg">Lorem Ipsum Generator</button></a>
   </div>
-  <div class="col-lg-2 col-md-6 col-sm-6">
-    <p><a class="btn btn-primary btn-lg" href="/paragraph" role="button">Lorem Ipsum Generator</a> </p>
-  </div>
-</div>
-<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vel minima quis commodi atque animi eum unde culpa magnam vero.</p>
-<div class="text-center">
-  <button type="submit" class="btn btn-success btn-lg">User Generator</button>
-  <button type="submit" class="btn btn-primary btn-lg">Lorem Ipsum Generator</button>
 </div>
 @stop

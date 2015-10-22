@@ -1,13 +1,12 @@
 @extends('layouts.master')
 
 @section('title')
-	Paragraph Generation
+	- Paragraph Generator
 @stop
+
 
 @section('content')
 	<?php
-    use Illuminate\HTTP\Controllers;
-    
     function displayParagraphs($count) {
       $result = '';
       // $count = $request->input('count');
@@ -20,6 +19,10 @@
     }
   ?>
   
+  @section('breadcrumb')
+		{!! Breadcrumbs::render() !!}
+	@stop
+
   <h2>Lorem Ipsom Paragraphs</h2>
   
    <!-- Displays validation error messages if present -->
