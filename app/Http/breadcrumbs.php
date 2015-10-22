@@ -17,5 +17,5 @@ Breadcrumbs::register('paragraphs', function($breadcrumbs)
 Breadcrumbs::register('users', function($breadcrumbs)
 {
     $breadcrumbs->parent('home');
-    $breadcrumbs->push('users', route('users'));
+    $breadcrumbs->push('Users', route('users'));
 });

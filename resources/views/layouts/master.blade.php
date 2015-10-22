@@ -41,7 +41,6 @@
     ></div>
   </div>
 </div>
-
 <hr>
 <footer class="text-center">
   <div class="container">

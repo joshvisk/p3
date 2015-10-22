@@ -16,9 +16,14 @@
   <p> </p>
 	<p>The random user generator will create fake names, address, and a short Lorem Ipsum blurb.</p>
   <div class="example"><b>Example:</b><br /><h4>John Smith</h4><br /><i>1234 56th Ave SW Seattle, WA 98001</i><br />Tempor feugiat donec sapien malesuada auctor sapien arcu inceptos aenean, consequat metus litora mattis vivamus feugiat arcu adipiscing mauris, primis ante ullamcorper ad nisi lobortis arcu per.</div>  
+  <hr>
   <div class="text-center">
-    <a href="/user"><button type="submit" class="btn btn-success btn-lg">User Generator</button></a>
-    <a href="/paragraph"><button type="submit" class="btn btn-primary btn-lg">Lorem Ipsum Generator</button></a>
+    <form method="get" action="/user" class="welcomeButton">
+	    <button type="submit" class="btn btn-success btn-lg">User Generator</button>
+    </form>
+		<form methot="get" action="/paragraph" class="welcomeButton">
+  	  <button type="submit" class="btn btn-primary btn-lg">Lorem Ipsum Generator</button>
+		</form>
   </div>
 </div>
 @stop
