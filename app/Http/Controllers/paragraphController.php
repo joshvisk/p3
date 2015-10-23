@@ -21,7 +21,7 @@ class ParagraphController extends Controller {
     public function postIndex(Request $request) {
 			// Validate the request data
 			$this->validate($request, [
-					'count' => 'required',
+					'count' => 'required|integer|min:1|max:20',
 			]);
     	return view('paragraph');
     }

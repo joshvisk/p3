@@ -8,6 +8,7 @@
 
 <!-- Bootstrap -->
 <link rel="stylesheet" href="../css/bootstrap.css">
+<!-- yield elements allow for template views to insert content -->
 @yield('stylesheet')
 @yield('scripts')
 
