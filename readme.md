@@ -15,8 +15,7 @@ This Web Application generates generates random user information dependent upon 
 
 
 ## Demo
-http://screencast.com/t/NeSGDMeeC
-
+http://screencast.com/t/NKBptZocNrp7
 
 
 ## Details for teaching team
