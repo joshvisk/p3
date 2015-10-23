@@ -4,33 +4,16 @@
   - Random User Generator
 @stop
 
+@section('includes')
+	<?php	require("logic.php"); ?>
+@stop
+
 @section('breadcrumb')
 	{!! Breadcrumbs::render() !!}
 @stop
 
 @section('content')
-	<?php
-  function displayUsers($count) {
-    $i = 1;
-    $result = '';
-    while ($i <= $count) {	
-      // use the factory to create a Faker\Generator instance
-      $faker = Faker\Factory::create();	
-      // generate data by accessing properties of faker object
-      $result .= "<h4>" . $faker->name . "</h4><br />";
-			if (isset($_POST['address'])) {
-	      $result .= "<i>" . $faker->address . "</i><br />";
-			}
- 			if (isset($_POST['blurb'])) {
-				$result .= $faker->text . "<br />";
-			}
-      $result .= "<br />";
-      $result .= "<hr>";
-      $i++;
-    }      
-      return $result;
-  }  
-  ?>
+
   <h2>Random User Generator</h2>
   
   <!-- Displays validation error messages if present -->
@@ -48,7 +31,7 @@
     <fieldset>
       <label>How many users?</label>
       <br />
-      <input type='text' name='users'>
+      <input type='text' name='users' value="3">
       <input type='submit' name='submit' value='Generate'>
     </fieldset>
     <fieldset>

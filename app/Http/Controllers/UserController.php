@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use vendor\fzaninotto\faker\src\faker;
 
 class UserController extends Controller {
 
@@ -23,7 +24,8 @@ class UserController extends Controller {
 		// Validate the request data
     $this->validate($request, [
     	'users' => 'required|integer|min:1|max:20',
-    ]);		
+    ]);
+				
 		return view('user');
 	}
 

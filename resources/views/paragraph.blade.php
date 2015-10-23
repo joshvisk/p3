@@ -4,22 +4,13 @@
 	- Paragraph Generator
 @stop
 
+@section('includes')
+	<?php	require("logic.php"); ?>
+@stop
+
 <!-- adds content to the master view -->
 @section('content')
-	<?php
-		// function will create Lorem Ipsum text into paragraph form
-    function displayParagraphs($count) {
-      $result = '';
-			// object is created
-      $generator = new Badcow\LoremIpsum\Generator();
-      $paragraphs = $generator->getParagraphs($count);
-			// loop to create user requested number of paragraphs
-      for ($i=0; $i < $count; $i++) {
-        $result .= "<p>" . $paragraphs[$i] . "</p>";
-      }
-      return $result;
-    }
-  ?>
+
   <!-- creates breadcrumbs and renders on the view -->
   @section('breadcrumb')
 		{!! Breadcrumbs::render() !!}
